@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const indexRouter = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 const userRouter = require('./users');

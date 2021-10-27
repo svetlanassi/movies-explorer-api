@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const SECRET_CODE = 'some-secret-key';
 
 const ALLOWED_CORS = [

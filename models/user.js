@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const mongoose = require('mongoose');
 const { isEmail } = require('validator');
 const { MSG_ERR_INCORRECT_EMAIL } = require('../utils/messages');

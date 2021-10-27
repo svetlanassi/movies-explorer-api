@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const MSG_ERR_NOT_FOUND_USER = 'Пользователь по указанному id не найден';
 const MSG_ERR_NOT_FOUND_MOVIE = 'Фильм с указанным id не найден';
 const MSG_ERR_NOT_FOUND_PAGE = 'Cтраница не найдена';

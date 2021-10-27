@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const { MSG_ERR_SERVER } = require('../utils/messages');
 
 const errorHandler = (err, req, res, next) => {

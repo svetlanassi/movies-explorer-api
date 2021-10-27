@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 const { ALLOWED_CORS, DEFAULT_ALLOWED_METHODS } = require('../utils/config');
 
 const cors = (req, res, next) => {

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const Movie = require('../models/movie');
 const NotFoundError = require('../errors/not-found-error');
 const ForbiddenError = require('../errors/forbidden-error');
@@ -14,7 +13,7 @@ const getMovies = (req, res, next) => {
   const owner = req.user._id;
   Movie.find({ owner })
     .then((movies) => {
-      res.status(200).send(movies);
+      res.send(movies);
     })
     .catch((err) => next(err));
 };
@@ -48,12 +47,13 @@ const createMovie = (req, res, next) => {
     movieId,
     owner,
   })
-    .then((movie) => res.status(200).send(movie))
+    .then((movie) => res.send(movie))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new BadReqError(MSG_ERR_INCORRECT_DATA));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 
@@ -67,13 +67,14 @@ const deleteMovie = (req, res, next) => {
         throw new ForbiddenError(MSG_ERR_FORBIDDEN);
       }
       return movie.remove()
-        .then(() => res.status(200).send({ message: MSG_DELETE_MOVIE }));
+        .then(() => res.send({ message: MSG_DELETE_MOVIE }));
     })
     .catch((err) => {
       if (err.name === 'CastError') {
         next(new BadReqError(MSG_ERR_INCORRECT_DATA));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 

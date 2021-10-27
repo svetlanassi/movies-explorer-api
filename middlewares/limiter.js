@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const rateLimit = require('express-rate-limit');
 const { MSG_LIMITER } = require('../utils/messages');
 

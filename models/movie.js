@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const mongoose = require('mongoose');
 const { isURL } = require('validator');
 const { MSG_ERR_INCORRECT_URL } = require('../utils/messages');

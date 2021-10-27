@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const movieRouter = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 const urlValidate = require('../middlewares/url-validate');

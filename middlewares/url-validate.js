@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const validator = require('validator');
 const BadReqError = require('../errors/bad-req-error');
 const { MSG_ERR_INCORRECT_URL } = require('../utils/messages');
