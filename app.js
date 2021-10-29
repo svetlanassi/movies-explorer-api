@@ -1,5 +1,3 @@
-/* eslint-disable spaced-comment */
-/* eslint-disable linebreak-style */
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
@@ -33,7 +31,4 @@ app.use(errors());
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Сервер запущен на порту ${PORT}`);
-});
+app.listen(PORT);
