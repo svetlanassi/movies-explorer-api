@@ -22,6 +22,6 @@
 
 ### Просмотр проекта:
 
-IP-адрес сервера: 130.193.52.202.
+IP-адрес сервера: 51.250.22.158.
 
 [Ссылка на backend](https://api.save.movies.nomoredomains.monster)
