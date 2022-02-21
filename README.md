@@ -1,5 +1,27 @@
-# Проект Movies Бэкенд
+# Диплом: Проект Movies, Backend
+
+В данном проекте был сделан backend проекта Movies.
+
+### При созданиии проекта были использованны следующие технологии:
+
+1. Express.
+2. MongoDB.
+3. Node.js.
+4. Mongoose.
+
+### Директории
+
+`/routes` — папка с файлами роутера  
+`/controllers` — папка с файлами контроллеров пользователя и карточки   
+`/models` — папка с файлами описания схем пользователя и карточки
+
+### Запуск проекта
+
+`npm run start` — запускает сервер   
+`npm run dev` — запускает сервер с hot-reload
+
+### Просмотр проекта:
 
 IP-адрес сервера: 130.193.52.202.
 
-[Ссылка на бэкенд](https://api.save.movies.nomoredomains.monster)
+[Ссылка на backend](https://api.save.movies.nomoredomains.monster)
